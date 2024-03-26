@@ -2,9 +2,14 @@ import React from 'react'
 import styles from '../styles/sections/menu.module.css'
 import { Link } from 'react-router-dom'
 import useAuth from '../hooks/auth.hook'
+import * as basket from '../redux/selectors/basket.selectors'
+import { useSelector } from 'react-redux'
+
 
 function Menu({isAuth}) {
     const { logout } = useAuth()
+
+    const basketCount = useSelector(basket.count)
 
     return (
         <div className="menu">
@@ -27,6 +32,7 @@ function Menu({isAuth}) {
                     <i className="fa-solid fa-basket-shopping"></i>
                 </div>
                 <div className={styles.label}>Basket</div>
+                <div>{basketCount}</div>
             </Link>
 
             <div className="mt-auto mb-auto"></div>
