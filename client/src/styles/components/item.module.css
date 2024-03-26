@@ -1,0 +1,19 @@
+.item {
+    width: 100%;
+    max-width: calc(25% - 27px);
+    min-width: 160px;
+
+    box-shadow: 7px 0px 19px -8px rgba(0,0,0,0.71);
+}
+
+.photo {
+    width: 100%;
+    background-color: blue;
+    height: 0px;
+    padding-top: 65%;
+}
+
+.title {
+    padding: 12px 16px;
+    font-weight: 600;
+}

@@ -1,0 +1,27 @@
+.item {
+    display: flex;
+    width: 100%;
+    padding: 20px 24px;
+    gap: 16px;
+    align-items: center;
+
+    color: #1b1b1b;
+}
+
+.item:hover {
+    background-color: bisque;
+}
+ 
+.icon {
+    width: 24px;
+    height: 24px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.label {
+    font-size: 18px;
+
+}
