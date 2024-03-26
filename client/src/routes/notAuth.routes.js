@@ -8,6 +8,7 @@ import Product from '../pages/Product.page'
 import Item from '../pages/Item.page'
 import Category from '../pages/Category.page'
 import Create from '../pages/Create.page'
+import Basket from '../pages/Basket.page'
 
 
 const notAuthRoutes = (
@@ -15,11 +16,12 @@ const notAuthRoutes = (
         <Route path="/" element={<Main />} exact />
         <Route path="/signup" element={<Signup />} exact />       
         <Route path="/login" element={<Login />} exact />
-        <Route path="/basket" element={<Main />} exact />
+        <Route path="/basket" element={<Basket />} exact />
         <Route path="/category/:id" element={<Category />} exact />
         <Route path="/product/:id" element={<Product />} exact />
         <Route path="/item/:id" element={<Item />} exact />
         <Route path="/create/:id" element={<Create />} exact />
+        
         <Route path="*" element={<Main />} exact  />
     </Routes>
 )
